@@ -1,0 +1,5 @@
+SYSTEM_USER="$USER"
+HOMEDIR=$(getent passwd ${SYSTEM_USER} | cut -d: -f6)
+CLOUD_DIR="Cloud"
+DAEMON_DIR=".mailru"
+DAEMON_BIN="cloud"
